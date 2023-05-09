@@ -1,7 +1,7 @@
 :root {
     /* CSS HEX */
     --onyx: #393e41ff;
-    --light-onyx: #2F3337;
+    --dark-onyx: #2F3337;
     --sea-green: #1c8946ff;
     --keppel: #44bba4ff;
     --lavender-web: #d8d2e1ff;
@@ -43,7 +43,7 @@ body {
     width:70%;
     margin: 10px;
     border-radius: 20px;
-    border: 5px solid var(--light-onyx);
+    border: 5px solid var(--dark-onyx);
     padding: 10px 0;
     clear:none;
 }
@@ -91,3 +91,50 @@ body {
     height: 256px;
     fill:var(--lavender-web);
 }
+
+/* Copy pasted below, fix soon:tm: */
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--jet);
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: var(--dark-onyx);
+}
+
+.close-button:hover {
+    background-color: var(--onyx);
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+} 
