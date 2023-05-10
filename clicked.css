@@ -6,13 +6,15 @@
     --keppel: #44bba4ff;
     --lavender-web: #d8d2e1ff;
     --jet: #26292C;
+    --zomp: #3BA590;
+    --light-zomp: #40B09A;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-body {
-    background-color: var(--onyx);   
-    color: var(--lavender-web);
+body{
+    background-color: var(--keppel);
+    color: var(--light-onyx);
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -28,6 +30,7 @@ body {
     float:left;
     text-align: left;
 }
+
 #reason-image{
     width: 256px;
     height: 256px;
@@ -39,23 +42,23 @@ body {
 
 .hire-block{
     display:inline-block;
-    background-color: var(--jet);
+    background-color: var(--zomp);
     width:85%;
     margin: 10px;
     border-radius: 20px;
-    border: 5px solid var(--light-onyx);
+    border: 5px solid var(--light-zomp);
     padding: 10px 0;
     clear:none;
     transition: 0.4s;
 }
+
 .hire-block .reason-text,.hire-block .reason-text,.reason-text{
     width: 70%;
     transition: 0.4s;
 }
 
-/* when hire block is hovered do this thing */
 .hire-block:hover{
-    border-color: var(--jet);
+    border-color: var(--zomp);
     width:90%;
     transition: 0.4s;
 }
@@ -80,6 +83,7 @@ body {
 #hire-reasons {
     text-align: left;
 }
+
 .reason-text{
     display:inline-block;
     /* center vertically */
@@ -89,6 +93,7 @@ body {
     padding: 10px 0;
     clear:none;
 }
+
 .reason-image-wrapper{
     display:inline-block;
     /* width: 256px;
@@ -96,11 +101,11 @@ body {
     margin: 10px;
     padding: 10px 0;
     clear:none;
-    background-color: var(--jet);
 }
+
 .reason-image{
     width: 100%;
-    fill:var(--lavender-web);
+    fill:var(--light-onyx);
 }
 
 .modal {
@@ -121,7 +126,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--jet);
+    background-color: var(--zomp);
     padding: 1rem 1.5rem;
     width: 24rem;
     border-radius: 0.5rem;
@@ -134,11 +139,11 @@ body {
     text-align: center;
     cursor: pointer;
     border-radius: 0.25rem;
-    border-color: var(--light-onyx);
+    border-color: var(--light-zomp);
 }
 
 .close-button:hover {
-    background-color: var(--onyx);
+    background-color: var(--sea-green);
 }
 
 .show-modal {
@@ -156,10 +161,10 @@ body {
     width: 25%;
     height: 10vw;
     font-size: 30px;
-    color: var(--lavender-web);
-    background-color: var(--jet);
+    color: var(--light-onyx);
+    background-color: var(--zomp);
     border-radius: 50px;
-    border: 5px solid var(--light-onyx);
+    border: 5px solid var(--light-zomp);
     transition: 0.4s;
 }
 .contact-modal:hover{

@@ -73,12 +73,33 @@
                 </div>
             </div> 
             <script>
+                // TODO
+                // Transform button into contact info
+
+                // Load custom css when modal displays
                 const modal = document.querySelector(".modal");
                 const trigger = document.querySelector(".contact-modal");
                 const closeButton = document.querySelector(".close-button");
 
+                function toggleTheme() {
+                    // Obtains an array of all <link>
+                    // elements.
+                    // Select your element using indexing.
+                    var theme = document.getElementsByTagName('link')[0];
+
+                    // Change the value of href attribute 
+                    // to change the css sheet.
+                    if (theme.getAttribute('href') == 'index.css') {
+                        theme.setAttribute('href', 'clicked.css');
+                    } else {
+                        theme.setAttribute('href', 'index.css');
+                    }
+                }
+
                 function toggleModal() {
                     modal.classList.toggle("show-modal");
+                    toggleTheme();
+
                 }
                 function windowOnClick(event) {
                     if (event.target === modal) {
