@@ -96,16 +96,15 @@ body {
 }
 .reason-image-wrapper{
     display:inline-block;
-    width: 256px;
-    height: 256px;
+    /* width: 256px;
+    height: 256px; */
     margin: 10px;
     padding: 10px 0;
     clear:none;
     background-color: var(--jet);
 }
 .reason-image{
-    width: 256px;
-    height: 256px;
+    width: 100%;
     fill:var(--lavender-web);
 }
 
