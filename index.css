@@ -48,8 +48,15 @@ body {
     clear:none;
     transition: 0.4s;
 }
-.hire-block .reason-text,.hire-block:hover .reason-text,.reason-text{
-    width:815.35px;
+.hire-block .reason-text,.hire-block .reason-text,.reason-text{
+    width: 69.99914148351648%;
+    transition: 0.4s;
+}
+
+/* when hire block is hovered do this thing */
+.hire-block:hover .reason-text,.hire-block:hover .reason-text,.reason-text{
+    width: 54.44377670940171%;
+    transition: 0.4s;
 }
 
 .hire-block:hover{
