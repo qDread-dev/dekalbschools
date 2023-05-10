@@ -167,4 +167,10 @@ body {
     background-color: var(--jet);
     border-radius: 50px;
     border: 5px solid var(--light-onyx);
+    transition: 0.4s;
+}
+.contact-modal:hover{
+    transition: 0.4s;
+    border: 5px solid var(--jet);
+    width: 30%;
 }
