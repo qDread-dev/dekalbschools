@@ -219,7 +219,7 @@ body {
 }
 
 #icon-one {
-    background-image: url('/icons/repo-template.svg');
+    background-image: url('./icons/repo-template.svg');
     background-repeat: no-repeat;
     background-size: 156px; /* Set a fixed background size of 256x256 pixels */
     background-position: center;
