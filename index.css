@@ -16,49 +16,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.center {
-    text-align: center;
-    font-weight: 300;
-    font-size: 2.5em;
-    margin: 0;
-    padding: 0;
-}
-
-.left{
-    float:left;
-    text-align: left;
-}
-#reason-image{
-    width: 256px;
-    height: 256px;
-}
-.right{
-    float:right;
-    text-align: right;
-}
-
-.hire-block{
-    display:inline-block;
-    background-color: var(--jet);
-    width:85%;
-    margin: 10px;
-    border-radius: 20px;
-    border: 5px solid var(--light-onyx);
-    padding: 10px 0;
-    clear:none;
-    transition: 0.4s;
-}
-.hire-block .reason-text,.hire-block .reason-text,.reason-text{
-    width: 70%;
-    transition: 0.4s;
-}
-
-/* when hire block is hovered do this thing */
-.hire-block:hover{
-    border-color: var(--jet);
-    width:90%;
-    transition: 0.4s;
-}
 #title-wrapper p, #title-wrapper h1{
     display:inline;
 }
@@ -80,28 +37,35 @@ body {
 #hire-reasons {
     text-align: left;
 }
-.reason-text{
-    display:inline-block;
-    /* center vertically */
-    vertical-align: middle;
-    width: 70%;
-    margin: 10px;
-    padding: 10px 0;
-    clear:none;
+
+#contact-wrapper{
+    text-align: center;
 }
-.reason-image-wrapper{
-    display:inline-block;
-    /* width: 256px;
-    height: 256px; */
-    margin: 10px;
-    padding: 10px 0;
-    clear:none;
-    background-color: var(--jet);
+
+
+.center {
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
 }
-.reason-image{
-    width: 100%;
-    fill:var(--lavender-web);
+
+.left{
+    position:absolute;
+    top: auto;
+    right: 0;
+    text-align: right;
 }
+.right{
+    float:right;
+    text-align: right;
+}
+
+
+
+/* Modal */
+
 
 .modal {
     position: fixed;
@@ -148,9 +112,6 @@ body {
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 } 
 
-#contact-wrapper{
-    text-align: center;
-}
 
 .contact-modal{
     width: 25%;
@@ -166,4 +127,126 @@ body {
     transition: 0.4s;
     border: 5px solid var(--jet);
     width: 30%;
+}
+
+
+#icon-one {
+    background-image: url('./icons/icon.svg');
+    background-repeat: no-repeat;
+    background-size: 190px 190px; /* Set a fixed background size of 256x256 pixels */
+    background-position: center;
+    background-color: transparent;
+    width: 256px; /* Set a fixed width of 256 pixels */
+    height: 256px; /* Set a fixed height of 256 pixels */
+    padding:25px;
+}
+
+
+.hire-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    table-layout: fixed;
+    background-color: var(--jet);
+    width: 80%;
+    height: 250px;
+    text-align: left;
+    position: relative;
+    border-radius: 20px;
+    border: 5px solid var(--light-onyx);
+    transition: 0.4s;
+    margin-bottom:25px;
+}
+
+.hire-block:hover {
+    border-color: var(--jet);
+    width: 85%;
+    transition: 0.4s;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--sea-green); */
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.icon-wrapper-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--sea-green); */
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.hire-block:hover .icon-wrapper {
+    transition: background-color 0.4s;
+}
+
+.text-wrapper {
+    vertical-align: middle;
+    margin-left: 0;
+    margin-right: auto;
+    width: 80%;
+    height: 100%;
+    font-size: 1em;
+    padding: 1em;
+    text-align: left;
+}
+.text-wrapper-right {
+    vertical-align: middle;
+    margin-right: 0;
+    margin-left: auto;
+    width: 80%;
+    height: 100%;
+    font-size: 1em;
+    padding: 1em;
+    text-align: right;
+}
+
+#icon-one {
+    background-image: url('./icons/repo-template.svg');
+    background-repeat: no-repeat;
+    background-size: 156px; /* Set a fixed background size of 256x256 pixels */
+    background-position: center;
+    background-color: transparent;
+    width: 256px; /* Set a fixed width of 256 pixels */
+    height: 256px; /* Set a fixed height of 256 pixels */
+    padding:25px;
+}
+
+#icon-two {
+    background-image: url('./icons/alert.svg');
+    background-repeat: no-repeat;
+    background-size: 156px; /* Set a fixed background size of 256x256 pixels */
+    background-position: center;
+    background-color: transparent;
+    width: 256px; /* Set a fixed width of 256 pixels */
+    height: 256px; /* Set a fixed height of 256 pixels */
+    padding:25px;
+}
+
+#icon-three {
+    background-image: url('./icons/smile.svg');
+    background-repeat: no-repeat;
+    background-size: 156px; /* Set a fixed background size of 256x256 pixels */
+    background-position: center;
+    background-color: transparent;
+    width: 256px; /* Set a fixed width of 256 pixels */
+    height: 256px; /* Set a fixed height of 256 pixels */
+    padding:25px;
 }
