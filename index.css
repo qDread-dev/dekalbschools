@@ -6,14 +6,18 @@
     --keppel: #44bba4ff;
     --lavender-web: #d8d2e1ff;
     --jet: #26292C;
+    --wave-end: #FA7268;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 body {
+    margin:0;
+    padding:0;
     background-color: var(--onyx);   
     color: var(--lavender-web);
     font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
 }
 
 #title-wrapper p, #title-wrapper h1{
@@ -40,6 +44,8 @@ body {
 
 #contact-wrapper{
     text-align: center;
+    background-color: transparent;
+    padding-bottom: 10px;
 }
 
 
@@ -118,14 +124,14 @@ body {
     height: 10vw;
     font-size: 30px;
     color: var(--lavender-web);
-    background-color: var(--jet);
+    background-color: #4636A8;
     border-radius: 50px;
-    border: 5px solid var(--light-onyx);
+    border: 5px solid #483AAF;
     transition: 0.4s;
 }
 .contact-modal:hover{
     transition: 0.4s;
-    border: 5px solid var(--jet);
+    border: 5px solid #4636A8;
     width: 30%;
 }
 
@@ -147,19 +153,19 @@ body {
     align-items: center;
     justify-content: flex-start;
     table-layout: fixed;
-    background-color: var(--jet);
+    background-color: #4636A8;
     width: 80%;
     height: 250px;
     text-align: left;
     position: relative;
     border-radius: 20px;
-    border: 5px solid var(--light-onyx);
+    border: 5px solid #483AAF;
     transition: 0.4s;
     margin-bottom:25px;
 }
 
 .hire-block:hover {
-    border-color: var(--jet);
+    border-color: #4636A8;
     width: 85%;
     transition: 0.4s;
 }
@@ -249,4 +255,30 @@ body {
     width: 256px; /* Set a fixed width of 256 pixels */
     height: 256px; /* Set a fixed height of 256 pixels */
     padding:25px;
+}
+
+#transition {
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    width: 100%;
+    position: absolute;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-image: url('./svg/layered-waves-haikei.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+#background{
+    padding:10px;
+    background-image: url('./svg/layered-waves-haikei.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }

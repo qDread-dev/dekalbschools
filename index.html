@@ -8,9 +8,6 @@
         <meta name="twitter:description" content="please employ me">
     </head>
     <body>
-        <style>
-            
-        </style>
         <div id="title-wrapper" class="center">
             <p>Hi, I'm</p>
             <h1>qDread</h1>
@@ -19,83 +16,76 @@
             <p>I'm a software developer.</p>
         </div>
         <div id="experience-wrapper" class="center">
-             <div id="experience-programming">
+            <div id="experience-programming">
                 <p>HTML, JS, CSS   -   1 year</p>
                 <p>Python          -   2 years</p>
                 <p>C#              -   2 years</p>
-             </div>
-        </div>
-        <div id="hire-reasons-wrapper" class="center">
-            <h4>Why you should hire me...</h4>
-            <!-- Reason 1 -->
-            <div class="hire-block">
-                <div class="text-wrapper">
-                    <p>I'm smart</p>
-                    <p>but still dumb enough to take this job</p>
-                </div>
-                <div class="icon-wrapper">
-                    <div id="icon-one"></div>
-                </div>
-            </div>
-
-            <!-- Reason 2 -->
-            <div class="hire-block right">
-                <div class="text-wrapper-right">
-                    <p>I'm Knowledgeable</p>
-                    <p>I actually know what is going on in the school system</p>
-                </div>
-                <div class="icon-wrapper-right">
-                    <div id="icon-two"></div>
-                </div>
-            </div>
-
-            <!-- Reason 3 -->
-            <div class="hire-block">
-                <div class="text-wrapper">
-                    <p>Always happy</p>
-                    <p>when im not using a chromebook</p>
-                </div>
-                <div class="icon-wrapper">
-                    <div id="icon-three"></div>
-                </div>
             </div>
         </div>
-
-
-        <div id="contact-wrapper">
-            <h3>Ready to hire your first competent person?</h3>
-            <button class="contact-modal">contact me</button>
-            <div class="modal">
-                <div class="modal-content">
-                    <span class="close-button">&times;</span>
-                    <h1>Contact Info</h1>
-                    <p>Message me on discord, Dread#4185</p>
-                    <p>or <a href="mailto:mail@qdread.me">email me</a></p>
+        
+        <div id="background">
+            <!-- <div id="transition"></div> -->
+            <div id="hire-reasons-wrapper" class="center">
+                <h4>Why you should hire me...</h4>
+                <!-- Reason 1 -->
+                <div class="hire-block">
+                    <div class="text-wrapper">
+                        <p>I'm smart</p>
+                        <p>but still dumb enough to take this job</p>
+                    </div>
+                    <div class="icon-wrapper">
+                        <div id="icon-one"></div>
+                    </div>
                 </div>
-            </div> 
-            <script>
-                // TODO
-                // Transform button into contact info
-
-                // Load custom css when modal displays
-                const modal = document.querySelector(".modal");
-                const trigger = document.querySelector(".contact-modal");
-                const closeButton = document.querySelector(".close-button");
-
-                function toggleModal() {
-                    modal.classList.toggle("show-modal");
-
-                }
-                function windowOnClick(event) {
-                    if (event.target === modal) {
-                        toggleModal();
+                <!-- Reason 2 -->
+                <div class="hire-block right">
+                    <div class="text-wrapper-right">
+                        <p>I'm Knowledgeable</p>
+                        <p>I actually know what is going on in the school system</p>
+                    </div>
+                    <div class="icon-wrapper-right">
+                        <div id="icon-two"></div>
+                    </div>
+                </div>
+                <!-- Reason 3 -->
+                <div class="hire-block">
+                    <div class="text-wrapper">
+                        <p>Always happy</p>
+                        <p>when im not using a chromebook</p>
+                    </div>
+                    <div class="icon-wrapper">
+                        <div id="icon-three"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact-wrapper">
+                <h3>Ready to hire your first competent person?</h3>
+                <button class="contact-modal">Contact me</button>
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <h1>Contact Info</h1>
+                        <p>Message me on discord, Dread#4185</p>
+                        <p>or <a href="mailto:mail@qdread.me">email me</a></p>
+                    </div>
+                </div>
+                <script>
+                    const modal = document.querySelector(".modal");
+                    const trigger = document.querySelector(".contact-modal");
+                    const closeButton = document.querySelector(".close-button");
+                    function toggleModal() {
+                        modal.classList.toggle("show-modal");
                     }
-                }
-                trigger.addEventListener("click", toggleModal);
-                closeButton.addEventListener("click", toggleModal);
-                window.addEventListener("click", windowOnClick); 
-            </script>
-        </div> 
-        <div id="svg-test"></div>
+                    function windowOnClick(event) {
+                        if (event.target === modal) {
+                            toggleModal();
+                        }
+                    }
+                    trigger.addEventListener("click", toggleModal);
+                    closeButton.addEventListener("click", toggleModal);
+                    window.addEventListener("click", windowOnClick);
+                </script>
+            </div>
+        </div>
     </body>
 </html>
