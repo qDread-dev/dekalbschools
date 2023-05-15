@@ -135,6 +135,21 @@ body {
     width: 30%;
 }
 
+.contact-modal div{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    transition: 0.4s;
+}
+
+.contact-modal:hover div{
+    width:90%;
+    
+    transition: 0.4s;
+}
+
+.contact-modal div p{
+}
 
 #icon-one {
     background-image: url('./icons/icon.svg');
